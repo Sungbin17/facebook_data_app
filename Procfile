@@ -1,0 +1,1 @@
+web: gunicorn data2018facebook.wsgi --log-file -
