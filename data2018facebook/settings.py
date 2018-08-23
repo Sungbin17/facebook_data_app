@@ -37,7 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'core',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -120,3 +127,6 @@ STATIC_ROOT = 'static/'
 STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
+MEDIA_ROOT = 'media/'
+
+MEDIA_URL = '/media/'
