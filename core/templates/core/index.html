@@ -43,7 +43,8 @@
         <p class="lead">This site is only available for playlist members. The purpose of this site is to provide facebook analytic data for managers in playlist.</p>
         <p class="lead">이 사이트는 오직 플레이리스트 멤버에게만 제공되는 사이트 입니다. 연애플레이리스트 페이지 관리자만이 페이스북 데이터에 접근할 수 있습니다. </p>
 
-{% if user.is_authenticated %}
+{% if request.user.username == 'wd1kr1' %}
+
         <a class="btn btn-lg btn-primary" href="./media/uploads/facebook_playlist_age_gender_api.xlsx" role="button">Download</a>
 {% else %}
   <p>You are not logged in</p>
